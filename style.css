@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.hero-page {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1566837945700-30057527ade0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.header-hero {
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px rgb(71, 4, 4);
+  letter-spacing: 2.5px;
+  color: #fff;
+}
+
+.header-caption::before {
+  position: absolute;
+  content: '';
+  top: 15px;
+  width: 300px;
+  height: 2px;
+  left: calc(50% - 150px);
+  background-color: red;
+}
+
+.header-caption {
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgb(71, 4, 4);
+  padding-top: 30px;
+  color: #fff;
+}
+
+.section-cards {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.heading-card {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  margin: 20px;
+}
+
+.card-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 10px 10px 10px #c5c5c5, -1rem -1rem 10rem #c5c5c5;
+}
+
+.card-img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+
+}
+
+.project-name {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.card-paragraph {
+  text-align: justify;
+}
+
+.card-btn {
+  padding: 5px 20px;
+  background-color: #000;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 400;
+}

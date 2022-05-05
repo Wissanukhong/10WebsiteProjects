@@ -1,0 +1,50 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ 
+}
+
+
+.img-pf {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  z-index: 100;
+
+}
+
+.bg {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 55%;
+  height: 120%;
+  background-color: rgba(50, 231, 255, 0.8);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: rotate 10s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
