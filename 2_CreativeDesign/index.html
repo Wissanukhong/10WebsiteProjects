@@ -10,12 +10,12 @@
 <body>
 
   <div class="container">
-    <section class="section-hero-page">
+    <section class="section-hero-page" id="home">
       <section class="navbar">
-        <a class="navbar-link" href="#">Design</a>
-        <a class="navbar-link" href="#">Customers</a>
-        <a class="navbar-link" href="#">Team</a>
-        <a class="navbar-link" href="#">Contact</a>
+        <a class="navbar-link" href="#home">Home</a>
+        <a class="navbar-link" href="#customer">Customers</a>
+        <a class="navbar-link" href="#team">Team</a>
+        <a class="navbar-link" href="#contact">Contact</a>
       </section>
       <div class="floating-bg"></div>
       <h1 class="section-1-heading">Creative Design</h1>
@@ -24,7 +24,7 @@
       </div>
     </section>
 
-    <section class="section-customer">
+    <section class="section-customer" id="customer">
       <h1 class="section-heading">customers</h1>
       <div class="customer-wrapper">
         <div class="customer">
@@ -69,7 +69,7 @@
       </div>
     </section>
 
-    <section class="section-team-member">
+    <section class="section-team-member" id="team">
       <h1 class="team-member-heading">team member</h1>
       <div class="team-member-wrapping">
         <div class="team-member">
@@ -190,7 +190,7 @@
     </div>
     </section>
 
-    <section class="section-contact-form"> 
+    <section class="section-contact-form" id="contact"> 
       <h1 class="contact-form-heading">contact me</h1>
       <div class="contact-form-container">
         <img src="https://images.unsplash.com/photo-1528329140527-75853b1e1650?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="post" class="contact-form-img">
@@ -204,8 +204,14 @@
       <p class="copyright">Copyright &copy; All Rights Reserved</p>
     </section>
 
+    <a href="#home" class="back-to-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
   </div>
   
+
+
   <script src="https://kit.fontawesome.com/be2900acad.js" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
