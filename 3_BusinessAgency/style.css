@@ -5,8 +5,66 @@
   text-decoration: none;
   list-style-type: none;
   outline: none;
+  font-family: 'Oswald', cursive;
 }
 
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.section-hero {
+  width: 100%vw;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.banner-heading {
+  margin-bottom: 2rem;
+  height: 20rem;
+}
+
+.banner-heading span {
+  color: #fff;
+  font-size: 10rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  text-shadow: .1rem .1rem 1rem #000;
+}
+
+
+.banner-paragraph {
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  background-color: rgba(0,0,0,0.5);
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  color: red;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.banner-btn {
+  width: 15rem;
+  height: 5rem;
+  background: linear-gradient(to right, rgb(125, 40, 40), rgb(193, 50, 50) );
+  color: #fff;
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+  border: 0.1rem solid #fff;
 }
