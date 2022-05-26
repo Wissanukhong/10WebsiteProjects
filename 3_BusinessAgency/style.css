@@ -105,11 +105,23 @@ html {
 
 .line-1 {
   width: 50%;
+  transition: all 0.5s;
 }
 
 .line-3 {
   width: 50%;
   margin-left: auto;
+  transition: all 0.5s;
+}
+
+.change .line-1 {
+  transform: translate(40%, 1rem)rotate(35deg);
+  transform-origin: right;
+}
+
+.change .line-3 {
+  transform: translateY(-1rem)rotate(-35deg);
+  transform-origin: right;
 }
 
 .section-hero {
