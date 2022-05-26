@@ -15,7 +15,7 @@ html {
 
 .navbar {
   width: 100vw;
-  height: 100vh;;
+  height: 6rem;
   position: fixed;
   top:0;
   left: 0;
@@ -23,11 +23,16 @@ html {
   z-index: 10;
   padding: 3rem;
   backdrop-filter: blur(2rem);
+  transition: height 0.5s;
+}
+
+.change.navbar {
+  height: 100vh;
 }
 
 .logo  {
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   left: 1.5rem;
 }
 
@@ -54,6 +59,15 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.change .navbar-list {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.7s 0.5s;
 }
 
 .navbar-link {
